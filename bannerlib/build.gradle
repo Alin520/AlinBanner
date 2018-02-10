@@ -7,8 +7,8 @@ android {
     defaultConfig {
         minSdkVersion 15
         targetSdkVersion 26
-        versionCode 1
-        versionName "1.0"
+        versionCode 2.0.0
+        versionName "2.0.0"
     }
 }
 
@@ -20,111 +20,3 @@ dependencies {
 }
 
 
-/** 以下开始是将Android Library上传到jcenter的相关配置**/
-
-//项目主页
-def siteUrl = 'https://github.com/Alin520/AlinBannerView'    // project homepage
-//项目的版本控制地址
-def gitUrl = 'https://github.com/Alin520/AlinBannerView.git' // project git
-
-//发布到组织名称名字，必须填写
-group = "com.alin"
-//发布到JCenter上的项目名字，必须填写
-def libName = "bannerview"
-// 版本号，下次更新是只需要更改版本号即可
-version = "2.0.0"
-/**  上面配置后上传至jcenter后的编译路径是这样的： compile 'com.alin:bannerlib:1.0.0'  **/
-
-//生成源文件
-task sourcesJar(type: Jar) {
-    from android.sourceSets.main.java.srcDirs
-    classifier = 'sources'
-}
-//生成文档
-task javadoc(type: Javadoc) {
-    source = android.sourceSets.main.java.srcDirs
-    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
-    options.encoding "UTF-8"
-    options.charSet 'UTF-8'
-    options.author true
-    options.version true
-    failOnError false
-}
-
-//文档打包成jar
-task javadocJar(type: Jar, dependsOn: javadoc) {
-    classifier = 'javadoc'
-    from javadoc.destinationDir
-}
-//拷贝javadoc文件
-task copyDoc(type: Copy) {
-    from "${buildDir}/docs/"
-    into "docs"
-}
-
-//上传到jcenter所需要的源码文件
-artifacts {
-    archives javadocJar
-    archives sourcesJar
-}
-
-// 配置maven库，生成POM.xml文件,通用
-install {
-    repositories.mavenInstaller {
-        // This generates POM.xml with proper parameters
-        pom {
-            project {
-                packaging 'aar'
-                name 'This is a perfect general bannerView'
-                url siteUrl
-                licenses {
-                    license {
-                        name 'This is a perfect general bannerView'
-                        url 'https://github.com/Alin520/AlinBannerView'
-                    }
-                }
-                developers {
-                    developer {
-                        id '15800657374'        //填写bintray或者github的用户名
-                        name '我是程序员Alin'         //姓名
-                        email 'alinhailin520@gmail.com'//邮箱
-                    }
-                }
-                scm {
-                    connection gitUrl
-                    developerConnection gitUrl
-                    url siteUrl
-                }
-            }
-        }
-    }
-}
-
-//上传到jcenter
-Properties properties = new Properties()
-properties.load(project.rootProject.file('local.properties').newDataInputStream())
-bintray {
-    user = properties.getProperty("bintray.user")    //读取 local.properties 文件里面的 bintray.user
-    key = properties.getProperty("bintray.apikey")   //读取 local.properties 文件里面的 bintray.apikey
-    configurations = ['archives']
-    pkg {
-        repo = "bannerlib" ////自己创建的仓库名字
-        name = libName    //发布到JCenter上的项目名字，必须填写
-        desc = 'This is a general bannerView framework'    //项目描述
-        websiteUrl = siteUrl
-        vcsUrl = gitUrl
-        licenses = ['Apache-2.0']//不能随便写，只能是仓库创建时选择的license type
-        userOrg = 'alinlibrary' //自己创建的organization名称
-        publish = true
-    }
-}
-
-////添加
-//publish {
-//    userOrg = 'alinlibrary'//bintray.com用户名
-//    groupId = 'com.alin'//jcenter上的路径
-//    artifactId = 'bannerview'//项目名称
-//    publishVersion = '2.0.0'//版本号
-//    desc = 'This is a general bannerView framework'//描述，不重要
-//    website = 'https://github.com/Alin520/AlinBannerView'//网站，不重要；尽量模拟github上的地址，例如我这样的；当然你有地址最好了
-//}
