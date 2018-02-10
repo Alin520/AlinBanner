@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+    <com.alin.lib.bannerlib.BannerView
+        android:id="@+id/main_bn"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        />
+
+    <TextView
+        android:id="@+id/indicator_tv"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="indicator位置效果"
+        android:padding="15dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/anim_tv"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="动画效果"
+        android:padding="15dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/auto_play_tv"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="banner自动播放效果"
+        android:padding="15dp"
+        android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/image_type_tv"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="bannerView支持图片类型"
+            android:padding="15dp"
+            android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/welcome_tv"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="欢迎引导页"
+        android:padding="15dp"
+        android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/welcome_overlay_tv"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="欢迎引导页-叠加效果"
+            android:padding="15dp"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

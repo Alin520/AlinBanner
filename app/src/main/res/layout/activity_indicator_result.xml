@@ -1,0 +1,124 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:alin="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <!--无Indicator-->
+        <com.alin.lib.bannerlib.BannerView
+            android:id="@+id/noIndicatorBgBv"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            alin:pointer_type="none"
+            />
+
+        <!--数字指示器-->
+        <com.alin.lib.bannerlib.BannerView
+            android:id="@+id/circleNoBgBv"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            alin:title_text_color="@color/red"
+            alin:banner_pointer_gravity="center"
+            alin:pointer_type="number"
+            />
+
+        <!--数字指示器，设置指示器参数-->
+        <com.alin.lib.bannerlib.BannerView
+            android:id="@+id/circleBgBv"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            alin:title_text_color="@color/red"
+            alin:pointer_select_width="10dp"
+            alin:pointer_select_height="10dp"
+            alin:pointer_margin="10dp"
+            alin:title_gravity="center"
+            alin:banner_pointer_gravity="right"
+            alin:pointer_type="number"
+            alin:number_pointer_background="@color/green"
+            alin:number_pointer_text_size="16sp"
+            alin:number_pointer_text_color="@color/light_red"
+            alin:number_pointer_padding="10dp"
+            />
+
+        <!--圆形指示器-->
+        <com.alin.lib.bannerlib.BannerView
+            android:id="@+id/leftToRightBv"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            alin:title_text_color="@color/red"
+            alin:pointer_select_width="10dp"
+            alin:pointer_select_height="10dp"
+            alin:pointer_margin="10dp"
+            alin:title_gravity="left"
+            alin:banner_pointer_gravity="right"
+            />
+
+        <!--圆形指示器-->
+        <com.alin.lib.bannerlib.BannerView
+            android:id="@+id/centerToRightBv"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            alin:pointer_drawable_selected="@mipmap/icon_select"
+            alin:pointer_drawable_unselected="@mipmap/icon_unselect"
+            alin:pointer_height="25dp"
+            alin:pointer_width="25dp"
+            alin:title_text_size="18sp"
+            alin:title_gravity="center"
+            alin:banner_pointer_gravity="right"
+            />
+
+
+        <!--圆形指示器-->
+        <com.alin.lib.bannerlib.BannerView
+            android:id="@+id/rightToleftBv"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            alin:indicator_background_color="@color/green"
+            alin:title_gravity="right"
+            alin:banner_pointer_gravity="left"
+            />
+
+        <!--圆形指示器-->
+        <com.alin.lib.bannerlib.BannerView
+            android:id="@+id/default_bv1"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            alin:number_pointer_padding="20dp"
+            alin:indicator_background_height="70dp"
+            alin:indicator_left_and_right_margin="20dp"
+            alin:interval_time="800"
+            />
+
+        <com.alin.lib.bannerlib.BannerView
+            android:id="@+id/default_bv2"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            alin:indicator_gravity="top"
+            alin:interval_time="1500"
+            />
+
+        <com.alin.lib.bannerlib.BannerView
+            android:id="@+id/default_bv3"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            alin:pointer_margin="15dp"
+            alin:pointer_height="10dp"
+            alin:pointer_width="15dp"
+            alin:interval_time="2500"
+            />
+    </LinearLayout>
+</ScrollView>

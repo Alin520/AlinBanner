@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="bannerContainerRlyt" type="id"></item>
+    <item name="bannerViewPagerVp" type="id"></item>
+    <item name="numIndicator" type="id"></item>
+    <item name="circleIndicatorContainerLlyt" type="id"></item>
+
+    <item name="indicatorContainerId" type="id"></item>
+    <item name="numIndicatorContainerTv" type="id"></item>
+    <item name="titleViewLlyt" type="id"></item>
+    <item name="bannerContainer" type="id"></item>
+    <item name="bannerTitleTv" type="id"></item>
+    <item name="numIndicatorInsideTv" type="id"></item>
+    <item name="indicatorInsideLlyt" type="id"></item>
+    <item name="bannerDefaultImageIv" type="id"></item>
+
+
+
+    <item name="bannerViewPager" type="id"/>
+    <item name="circleIndicator" type="id"/>
+    <item name="titleView" type="id"/>
+    <item name="bannerTitle" type="id"/>
+    <item name="numIndicatorInside" type="id"/>
+    <item name="indicatorInside" type="id"/>
+    <item name="bannerDefaultImage" type="id"/>
+
+</resources>

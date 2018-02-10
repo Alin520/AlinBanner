@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--bannerView-->
+    <declare-styleable name="banner_view">
+        <!--bannerView高度-->
+        <attr name="banner_height" format="dimension|reference"></attr>
+
+        <!--bannerView默认占位图-->
+        <attr name="banner_default_background_imageview" format="reference"></attr>
+
+        <!--indicator高度-->
+        <attr name="indicator_background_height" format="dimension|reference"></attr>
+
+        <!--indicator背景色-->
+        <attr name="indicator_background_color" format="color|reference"></attr>
+
+        <!--title长度-->
+        <attr name="title_width" format="dimension|reference"></attr>
+
+        <!--title字体颜色-->
+        <attr name="title_text_color" format="color|reference"></attr>
+
+        <!--title字体大小-->
+        <attr name="title_text_size" format="dimension|reference"></attr>
+
+        <!--数字pointer 字体颜色-->
+        <attr name="number_pointer_text_color" format="color|reference"></attr>
+
+        <!--数字pointer 字体大小-->
+        <attr name="number_pointer_text_size" format="dimension|reference"></attr>
+
+        <!--数字pointer 背景-->
+        <attr name="number_pointer_background" format="reference"></attr>
+
+        <!--数字pointer padding-->
+        <attr name="number_pointer_padding" format="dimension|reference"></attr>
+
+        <!--pointer 指示器每个小圆点的高度(默认)-->
+        <attr name="pointer_height" format="dimension|reference"></attr>
+
+        <!--indicator 指示器每个小圆点的宽度（默认）-->
+        <attr name="pointer_width" format="dimension|reference"></attr>
+
+        <!--pointer 指示器每个小圆点的高度（选中）-->
+        <attr name="pointer_select_height" format="dimension|reference"></attr>
+
+        <!--pointer 指示器每个小圆点的宽度（选中）-->
+        <attr name="pointer_select_width" format="dimension|reference"></attr>
+
+        <!--圆形pointer，被选中的drawable-->
+        <attr name="pointer_drawable_selected" format="reference" />
+
+        <!--圆形pointer，未被选中的drawable-->
+        <attr name="pointer_drawable_unselected" format="reference" />
+
+        <!--圆形pointer 两点之间的间距 -->
+        <attr name="pointer_margin" format="dimension|reference"></attr>
+
+        <!--indicator容器内部左右padding-->
+        <attr name="indicator_left_and_right_padding" format="dimension|reference"/>
+
+        <!--indicator容器内部上下padding-->
+        <attr name="indicator_top_and_bottom_padding" format="dimension|reference"/>
+
+        <!--indicator容器左右margin-->
+        <attr name="indicator_left_and_right_margin" format="dimension|reference"/>
+
+        <!--indicator容器上下margin-->
+        <attr name="indicator_top_and_bottom_margin" format="dimension|reference"/>
+
+        <!--是否自动轮播-->
+        <attr name="is_auto_play" format="boolean"></attr>
+        <!--自动轮播的时间间隔 -->
+        <attr name="interval_time" format="integer"></attr>
+        <!--页码切换过程的时间长度-->
+        <attr name="page_change_duration" format="integer"></attr>
+        <!--是否可以手动切换页面-->
+        <attr name="is_touch_scroll" format="boolean"></attr>
+        <!--是否无限轮播，注意：false不是无限轮播，此时也不能自动播放-->
+        <attr name="is_infinite" format="boolean"></attr>
+        <!--动画最小透明度-->
+        <attr name="anim_min_alpha" format="float"></attr>
+        <!--动画最小缩放大小-->
+        <attr name="anim_min_scale" format="float"></attr>
+        <!--动画最小旋转角度-->
+        <attr name="anim_min_rotation" format="integer"></attr>
+
+        <!--动画效果-->
+        <attr name="slid_effect" format="enum">
+            <enum name="Default" value="0"></enum>
+            <enum name="Alpha" value="1"></enum>
+            <enum name="Rotate" value="2"></enum>
+            <enum name="Zoom" value="3"></enum>
+            <enum name="Translate" value="4"></enum>
+            <enum name="Folding" value="5"></enum>
+            <enum name="Flip" value="6"></enum>
+            <enum name="Cube" value="7"></enum>
+            <enum name="Fade" value="8"></enum>
+            <enum name="Flashing" value="9"></enum>
+        </attr>
+
+        <!--indicator内部pointer（数字、圆形指示器）的位置-->
+        <attr name="banner_pointer_gravity" format="enum">
+            <enum name="left" value="9" />
+            <enum name="center" value="13" />
+            <enum name="right" value="11" />
+        </attr>
+
+        <!--title位置-->
+        <attr name="title_gravity" format="enum">
+            <enum name="left" value="9" />
+            <enum name="center" value="13" />
+            <enum name="right" value="11" />
+        </attr>
+
+        <!--indicator在BannerView中位置-->
+        <attr name="indicator_gravity" format="enum">
+            <enum name="top" value="10" />
+            <enum name="bottom" value="12" />
+        </attr>
+
+        <!--pointer类型，0没有indicator指示器，1圆形指示器，2数字指示器-->
+        <attr name="pointer_type" format="enum">
+            <enum name="none" value="0" />
+            <enum name="number" value="1" />
+            <enum name="circle" value="2" />
+        </attr>
+
+        <!--bannerView轮播图 imageView缩放类型-->
+        <attr name="banner_image_scale_type" format="enum">
+            <enum name="center" value="0" />
+            <enum name="center_crop" value="1" />
+            <enum name="center_inside" value="2" />
+            <enum name="fit_center" value="3" />
+            <enum name="fit_end" value="4" />
+            <enum name="fit_start" value="5" />
+            <enum name="fit_xy" value="6" />
+            <enum name="matrix" value="7" />
+        </attr>
+
+        <!--是否在最后一页显示indicator-->
+        <attr name="last_indicator_is_visible" format="boolean"></attr>
+
+    </declare-styleable>
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:alin="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <com.alin.lib.bannerview.view.CommonFramLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <com.alin.lib.bannerlib.BannerView
+            android:id="@+id/background_bn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            alin:pointer_drawable_unselected="@drawable/bg_black_circle"
+            alin:pointer_drawable_selected="@drawable/bg_red_circle"
+            alin:title_gravity="center"
+            alin:banner_pointer_gravity="center"
+            alin:is_infinite="false"
+            alin:pointer_type="circle"
+            alin:slid_effect="Alpha"
+            alin:indicator_background_color="@color/transparent"
+            alin:pointer_margin="10dp"
+            />
+        <com.alin.lib.bannerlib.BannerView
+            android:id="@+id/foreground_bn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            alin:pointer_drawable_unselected="@drawable/bg_black_circle"
+            alin:pointer_drawable_selected="@drawable/bg_red_circle"
+            alin:title_gravity="center"
+            alin:banner_pointer_gravity="center"
+            alin:is_infinite="false"
+            alin:pointer_type="circle"
+            alin:slid_effect="Fade"
+            alin:indicator_background_color="@color/transparent"
+            alin:pointer_margin="10dp"
+            />
+    </com.alin.lib.bannerview.view.CommonFramLayout>
+    <TextView
+        android:id="@+id/skip_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:text="跳过"
+        android:textColor="@color/light_red"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/enter_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="进入"
+        android:textColor="@color/red"
+        android:textSize="24sp"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

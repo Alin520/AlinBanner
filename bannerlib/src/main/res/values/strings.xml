@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">banner</string>
+    <string name="format_splash_skip">跳过{0}</string>
+    <string name="number_indicator">1/</string>
+</resources>

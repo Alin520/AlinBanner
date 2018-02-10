@@ -1,0 +1,51 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:alin="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <com.alin.lib.bannerlib.BannerView
+            android:id="@+id/image_type_bv"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            alin:title_text_color="@color/green"
+            alin:title_gravity="left"
+            alin:banner_pointer_gravity="right"
+            />
+
+
+        <TextView
+            android:id="@+id/id_type_tv"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="ImageView的id图片类型"
+            android:padding="15dp"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/url_type_tv"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="ImageView的url图片类型"
+            android:padding="15dp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/drawable_type_tv"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="ImageView的drawable图片类型"
+            android:padding="15dp"
+            android:textSize="18sp" />
+    </LinearLayout>
+</ScrollView>

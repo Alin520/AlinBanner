@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.alin.lib.bannerlib.BannerView
+        android:id="@+id/auto_play_bn"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        />
+
+    <TextView
+        android:id="@+id/start_play_tv"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="开始自动播放"
+        android:padding="15dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/stop_play_tv"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="停止自动播放，手动切换"
+        android:padding="15dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/infinite_play_tv"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="点击有限播放，不能自动轮播，只能手动切换"
+        android:padding="15dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/allow_touch_scrollable_tv"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="点击不允许滑动"
+        android:padding="15dp"
+        android:textSize="18sp" />
+</LinearLayout>

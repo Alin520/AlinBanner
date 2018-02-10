@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:alin="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+
+    <com.alin.lib.bannerlib.BannerView
+        android:id="@+id/anim_bv"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        alin:pointer_drawable_unselected="@drawable/bg_black_circle"
+        alin:pointer_drawable_selected="@drawable/bg_red_circle"
+        alin:title_gravity="left"
+        alin:banner_pointer_gravity="center"
+        alin:slid_effect="Default"
+        alin:pointer_type="circle"
+        android:visibility="visible"
+        />
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ></ListView>
+
+</LinearLayout>
