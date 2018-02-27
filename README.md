@@ -292,5 +292,5 @@ mBannerView.setSkipOrEnterListener(skipView, enterView, new BannerView.OnSkipOrE
       掘金地址：https://juejin.im/post/5a7941c96fb9a0633f0dfe64
       CSDN地址：http://blog.csdn.net/hailin123123/article/details/79266112
       联系方式:
-      欢迎加入QQ群：707202045</br>
+      欢迎加入QQ群：707202045
   ![indicator样式风格](https://user-gold-cdn.xitu.io/2018/2/6/1616a124eff7cae3?w=412&h=562&f=png&s=56165)
