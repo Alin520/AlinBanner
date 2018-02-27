@@ -1,6 +1,6 @@
 
 # 一、前序
-[AlinBannerView](https://github.com/Alin520/AlinBannerView)是一款Android轮播控件、引导页面滑动框架。支持有限、无限循环，可以自动、收动播放，支持自定义指示器，支持各种样式的自定义和多种图片类型，如Url、drawable加载。也可以选择酷炫切换动画的切换和自定义动画的扩张。是一款简单，易扩展、易使用框架。
+[AlinBanner](https://github.com/Alin520/AlinBanner)是一款Android轮播控件、引导页面滑动框架。支持有限、无限循环，可以自动、收动播放，支持自定义指示器，支持各种样式的自定义和多种图片类型，如Url、drawable加载。也可以选择酷炫切换动画的切换和自定义动画的扩张。是一款简单，易扩展、易使用框架。
 
 虽然市面上已经有很多人在写这个图片轮播框架了，但是质量参差不齐，有很多功能都不全面，或多或少都由这样或者那样的问题。当然，也有不乏优秀的作品，其中，具有代表性的有[BGABanner-Android](https://github.com/bingoogolapple/BGABanner-Android)和 youth5201314的[banner](https://github.com/youth5201314/banner)两个banner框架。个人觉得这两个框架对于一般的需求是都可以满足的，但是也有点小问题：
 
@@ -14,14 +14,14 @@
       3）缓存机制做的不好。如动画缓存。</br>
       
 
-因此，为了更好的体验效果和框架的扩展性。自己整了这个框架[AlinBannerView](https://github.com/Alin520/AlinBannerView)。
+因此，为了更好的体验效果和框架的扩展性。自己整了这个框架[AlinBanner](https://github.com/Alin520/AlinBanner)。
       希望能解决大家在实际项目中的一些难缠的问题。好了，闲话休叙，直接上图了。
    
-点击下载 [AlinBannerView.apk](https://fir.im/ytb9) 或扫描下面的二维码安装</br>
+点击下载 [AlinBanner.apk](https://fir.im/ytb9) 或扫描下面的二维码安装</br>
 ![这里写图片描述](https://user-gold-cdn.xitu.io/2018/2/6/16169ba68119d425?w=192&h=187&f=png&s=18479)
 
 # 联系方式</br>
-      github地址：https://github.com/Alin520/AlinBannerView。
+      github地址：https://github.com/Alin520/AlinBanner。
       掘金地址：https://juejin.im/post/5a7941c96fb9a0633f0dfe64
       CSDN地址：http://blog.csdn.net/hailin123123/article/details/79266112
       联系方式:
@@ -64,10 +64,9 @@
 
 ```
 dependencies {
-   implementation 'com.alin:bannerlib:1.0.0'
+   implementation 'com.alin:bannerview:2.0.1'
 }
     
-
 ```
 
 ## step2、在布局文件中添加BannerView（ 必选）
@@ -275,16 +274,21 @@ mBannerView.setSkipOrEnterListener(skipView, enterView, new BannerView.OnSkipOrE
 解决方式：设置高度为layout_height="match_parent"或者具体的一个高度值即可
 
 ###### 2、设置的Image的数据长度必须大于等于title的数据长度。 当设置的Image的数据长度是0时，展示的是默认的占位图，当数据长度是1时，bannerView是不能左右切换的。
-###### 3、 当bannerView设置setInfinite(false)为有限播放的时候，再设置setAutoPlay（true）自动播放是无效的。因为当bannerView为有限播放的时候，只能是手动播放。
+###### 3、当bannerView设置setInfinite(false)为有限播放的时候，再设置setAutoPlay（true）自动播放是无效的。因为当bannerView为有限播放的时候，只能是手动播放。
+
+###### 4、报错Error:Execution failed for task ':app:transformDexArchiveWithExternalLibsDexMergerForDebug'.
+> java.lang.RuntimeException: java.lang.RuntimeException: com.android.builder.dexing.DexArchiveMergerException: Unable to merge dex。
+
+解决方式：因为你项目中也引用了v7包，只用删除本地引用的V7（com.android.support:appcompat-v7:26.1.0）包即可。
 
 
-如果你觉得[AlinBannerView](https://github.com/Alin520/AlinBannerView) 能帮到你真正解决项目中的问题，就在博客中个我点个赞，或者去我的[github](https://github.com/Alin520/AlinBannerView)star。
+如果你觉得[AlinBanner](https://github.com/Alin520/AlinBanner) 能帮到你真正解决项目中的问题，就在博客中个我点个赞，或者去我的[github](https://github.com/Alin520/AlinBanner)中star。
 如果项目中有问题，可以直接给我留言。 </br>  
-点击下载 [AlinBannerView.apk](https://fir.im/ytb9) 或扫描下面的二维码安装</br>
+点击下载 [AlinBanner.apk](https://fir.im/ytb9) 或扫描下面的二维码安装</br>
 ![这里写图片描述](https://user-gold-cdn.xitu.io/2018/2/6/16169ba68119d425?w=192&h=187&f=png&s=18479)
 
 # 联系方式</br>
-      github地址：https://github.com/Alin520/AlinBannerView。
+      github地址：https://github.com/Alin520/AlinBanner。
       掘金地址：https://juejin.im/post/5a7941c96fb9a0633f0dfe64
       CSDN地址：http://blog.csdn.net/hailin123123/article/details/79266112
       联系方式:
