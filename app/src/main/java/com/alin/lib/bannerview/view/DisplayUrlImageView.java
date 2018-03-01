@@ -30,4 +30,10 @@ public class DisplayUrlImageView implements ImageLoaderInterface<String,BannerIm
         AppUtil.checkNotNull(path,"displayImageView path is null error!");
         Glide.with(context).load(path).into(imageView);
     }
+
+    @Override
+    public void releaseImageView(BannerImageView imageView) {
+        if (imageView != null)
+            Glide.clear(imageView);
+    }
 }

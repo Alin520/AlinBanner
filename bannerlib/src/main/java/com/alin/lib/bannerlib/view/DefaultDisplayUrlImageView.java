@@ -30,4 +30,10 @@ public class DefaultDisplayUrlImageView implements ImageLoaderInterface<String,B
         AppUtil.checkNotNull(imageUrl,"displayImageView params imageUrl is null error!");
         Glide.with(context).load(imageUrl).into(imageView);
     }
+
+    @Override
+    public void releaseImageView(BannerImageView imageView) {
+        if (imageView != null)
+            Glide.clear(imageView);
+    }
 }

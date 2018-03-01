@@ -1,6 +1,7 @@
 package com.alin.lib.bannerlib.view;
 
 import android.content.Context;
+import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
 
 import com.alin.lib.bannerlib.listener.ImageLoaderInterface;
@@ -44,6 +45,7 @@ public class BannerImageView<T> extends android.support.v7.widget.AppCompatImage
         }else if (mImagePath instanceof Drawable){
             Drawable imageDrawable = (Drawable) mImagePath;
             this.setImageDrawable(imageDrawable);
+            
         }
 
         switch (mScaleType){

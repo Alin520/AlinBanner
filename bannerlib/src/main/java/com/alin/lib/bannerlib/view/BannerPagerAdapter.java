@@ -124,6 +124,13 @@ public class BannerPagerAdapter<T> extends PagerAdapter implements ViewPager.OnP
 
     @Override
     public void destroyItem(ViewGroup container, int position, Object object) {
+        if (mDataList == null || mDataList.isEmpty()) {
+            return;
+        }
+        //由于Glide、Fresco等网络框架有缓存，所以只有当图片加载的是通过图片的url时，才去清除图片缓存
+        if (object instanceof BannerImageView && mDataList.get(0) instanceof String) {
+            mImageLoader.releaseImageView((BannerImageView) object);
+        }
         container.removeView((View)object);
     }
 
