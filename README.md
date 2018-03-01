@@ -4,6 +4,7 @@
 
 > [AlinBanner](https://github.com/Alin520/AlinBanner)是一款Android轮播控件、引导页面滑动框架。支持有限、无限循环，可以自动、收动播放，支持自定义指示器，支持各种样式的自定义和多种图片类型，如Url、drawable加载。也可以选择酷炫切换动画的切换和自定义动画的扩张。是一款简单，易扩展、易使用框架。
 
+
 ## 版本更新记录
 
 [版本更新记录](https://github.com/Alin520/AlinBanner/blob/master/CHANGELOG.md)
