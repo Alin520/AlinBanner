@@ -13,14 +13,14 @@
 
 > 虽然市面上已经有很多人在写这个图片轮播框架了，但是质量参差不齐，有很多功能都不全面，或多或少都由这样或者那样的问题。当然，也有不乏优秀的作品，其中，具有代表性的有[BGABanner-Android](https://github.com/bingoogolapple/BGABanner-Android)和 youth5201314的[banner](https://github.com/youth5201314/banner)两个banner框架。个人觉得这两个框架对于一般的需求是都可以满足的，但是也有点小问题：
 
-### 1、banner框架：</br>
-	1）对于非无限轮播不支持。</br>
+### 1、banner框架：
+>	1）对于非无限轮播不支持。</br>
 	2）当用手指滑动页至不同页面时，当手指手动离开页面时，轮播图的位置没有处理好，还是手指滑动前的位置。</br>
 	3）banner框架是用的静态布局文件布局的，扩展性不好。</br>
-### 2、BGABanner-Android：</br>
-      1）对于图片的数据展示不能很好扩展。如用户图片想传静态的图片imageId或者drwable、或者url。</br>
+### 2、BGABanner-Android：
+>  1）对于图片的数据展示不能很好扩展。如用户图片想传静态的图片imageId或者drwable、或者url。</br>
       2）自定轮播次数是用的Integer的最大值，轮播次数受限制（这个可以满足正常需求）。</br>
-      3）缓存机制做的不好。如动画缓存。</br>
+      3）缓存机制做的不好。如动画缓存。</br>   
       
 
 因此，为了更好的体验效果和框架的扩展性。自己整了这个框架[AlinBanner](https://github.com/Alin520/AlinBanner)。
