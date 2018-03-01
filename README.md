@@ -8,7 +8,6 @@
 
 [版本更新记录](https://github.com/Alin520/AlinBanner/blob/master/CHANGELOG.md)
 
-
 # 前序
 
 > 虽然市面上已经有很多人在写这个图片轮播框架了，但是质量参差不齐，有很多功能都不全面，或多或少都由这样或者那样的问题。当然，也有不乏优秀的作品，其中，具有代表性的有[BGABanner-Android](https://github.com/bingoogolapple/BGABanner-Android)和 youth5201314的[banner](https://github.com/youth5201314/banner)两个banner框架。个人觉得这两个框架对于一般的需求是都可以满足的，但是也有点小问题：
