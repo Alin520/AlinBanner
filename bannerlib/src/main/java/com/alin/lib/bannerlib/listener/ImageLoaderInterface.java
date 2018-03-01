@@ -22,6 +22,4 @@ public interface ImageLoaderInterface<T extends Object,V extends View> extends S
     //展示ImageView
     void  displayImageView(Context context, T image, V imageView);
 
-    //释放ImageView内存
-    void releaseImageView(V imageView);
 }

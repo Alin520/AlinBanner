@@ -2,10 +2,17 @@ Change Log
 ==========
 ## Version 2.0.2
 
+_2018-2-25_
+
+ * 优化了ImageView内存释放。由于Glide、Fresco等网络框架有缓存，所以只有当图片加载的是通过图片的url时，才去清除图片缓存 
+ 
+## Version 2.0.1
+
 _2018-2-23_
 
- * 添加了ReadMe说明文档、优化了ImageView内存释放。由于Glide、Fresco等网络框架有缓存，所以只有当图片加载的是通过图片的url时，才去清除图片缓存 
- 
+ * 添加了ReadMe说明文档
+ * 修改gradle文件
+
 
 ## Version 2.0.0
 

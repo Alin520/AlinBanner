@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/BannerView.iml" filepath="$PROJECT_DIR$/BannerView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AlinBanner.iml" filepath="$PROJECT_DIR$/AlinBanner.iml" />
+      <module fileurl="file://H:\GithubProject\AlinBanner\BannerView.iml" filepath="H:\GithubProject\AlinBanner\BannerView.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://H:\GithubProject\AlinBanner\app\app.iml" filepath="H:\GithubProject\AlinBanner\app\app.iml" />
       <module fileurl="file://$PROJECT_DIR$/bannerlib/bannerlib.iml" filepath="$PROJECT_DIR$/bannerlib/bannerlib.iml" />
+      <module fileurl="file://H:\GithubProject\AlinBanner\bannerlib\bannerlib.iml" filepath="H:\GithubProject\AlinBanner\bannerlib\bannerlib.iml" />
     </modules>
   </component>
 </project>
