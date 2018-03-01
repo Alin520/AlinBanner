@@ -2,15 +2,16 @@
 # AlinBanner
 [![License](https://img.shields.io/badge/license-Apache%202-green.svg)](https://www.apache.org/licenses/LICENSE-2.0) [![Download](https://api.bintray.com/packages/alinlibrary/alinbanner/bannerview/images/download.svg) ](https://bintray.com/alinlibrary/alinbanner/bannerview/_latestVersion)
 
-   [AlinBanner](https://github.com/Alin520/AlinBanner)是一款Android轮播控件、引导页面滑动框架。支持有限、无限循环，可以自动、收动播放，支持自定义指示器，支持各种样式的自定义和多种图片类型，如Url、drawable加载。也可以选择酷炫切换动画的切换和自定义动画的扩张。是一款简单，易扩展、易使用框架。
+> [AlinBanner](https://github.com/Alin520/AlinBanner)是一款Android轮播控件、引导页面滑动框架。支持有限、无限循环，可以自动、收动播放，支持自定义指示器，支持各种样式的自定义和多种图片类型，如Url、drawable加载。也可以选择酷炫切换动画的切换和自定义动画的扩张。是一款简单，易扩展、易使用框架。
 
-# 版本更新记录
+## 版本更新记录
+
+[版本更新记录](https://github.com/Alin520/AlinBanner/blob/master/CHANGELOG.md)
 
 
+# 前序
 
-# 0、前序
-
-虽然市面上已经有很多人在写这个图片轮播框架了，但是质量参差不齐，有很多功能都不全面，或多或少都由这样或者那样的问题。当然，也有不乏优秀的作品，其中，具有代表性的有[BGABanner-Android](https://github.com/bingoogolapple/BGABanner-Android)和 youth5201314的[banner](https://github.com/youth5201314/banner)两个banner框架。个人觉得这两个框架对于一般的需求是都可以满足的，但是也有点小问题：
+> 虽然市面上已经有很多人在写这个图片轮播框架了，但是质量参差不齐，有很多功能都不全面，或多或少都由这样或者那样的问题。当然，也有不乏优秀的作品，其中，具有代表性的有[BGABanner-Android](https://github.com/bingoogolapple/BGABanner-Android)和 youth5201314的[banner](https://github.com/youth5201314/banner)两个banner框架。个人觉得这两个框架对于一般的需求是都可以满足的，但是也有点小问题：
 
 ### 1、banner框架：</br>
 	1）对于非无限轮播不支持。</br>
