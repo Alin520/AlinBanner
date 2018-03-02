@@ -31,5 +31,9 @@ public class DefaultDisplayUrlImageView implements ImageLoaderInterface<String,B
         Glide.with(context).load(imageUrl).into(imageView);
     }
 
-
+    @Override
+    public void recycleImageView(BannerImageView imageView) {
+        if (imageView != null)
+            Glide.clear(imageView);
+    }
 }

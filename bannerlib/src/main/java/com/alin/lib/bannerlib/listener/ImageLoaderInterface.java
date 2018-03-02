@@ -22,4 +22,10 @@ public interface ImageLoaderInterface<T extends Object,V extends View> extends S
     //展示ImageView
     void  displayImageView(Context context, T image, V imageView);
 
+    /***
+     * @deprecated
+     * 由于Glide、Fresco等网络框架有缓存，所以只有当图片加载的是通过图片的url时，才去清除图片缓存
+     * 释放ImageView内存空间
+     */
+    void  recycleImageView(V imageView);
 }
